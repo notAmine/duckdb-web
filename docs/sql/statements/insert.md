@@ -139,7 +139,7 @@ INSERT INTO tbl (j, i) VALUES (168, 1) ON CONFLICT DO UPDATE SET j = EXCLUDED.j;
 INSERT INTO tbl BY NAME (SELECT 1 AS i, 336 AS j) ON CONFLICT DO UPDATE SET j = EXCLUDED.j;
 ```
 
-These statements finish successfully and leaves the table with a single row `<i: 1, j: 84>`.
+These statements finish successfully and leaves the table with a single row `<i: 1, j: 336>`.
 
 #### Shorthand
 
